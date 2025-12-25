@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة نادي الطلاب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {font-family: 'Cairo', sans-serif; box-sizing: border-box; margin: 0; padding: 0;}
+    body {background: #f4f4f4; color: #333; line-height: 1.6; padding: 20px;}
+    header, footer {background: #004d7a; color: white; text-align: center; padding: 20px; border-radius: 8px;}
+    nav {display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0;}
+    nav a {padding: 10px 15px; background: #0077b6; color: white; border-radius: 6px; text-decoration: none; cursor: pointer;}
+    section {margin-bottom: 30px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    h2 {color: #0077b6; margin-bottom: 15px;}
+    ul {list-style-type: none;}
+    li {margin: 5px 0;}
+    .hidden {display: none;}
+    button.back-link {display: block; width: fit-content; margin: 20px auto 0; background: #0077b6; color: white; padding: 10px 20px; border-radius: 6px; text-align: center; border: none; cursor: pointer;}
+    form {display: flex; flex-direction: column; gap: 10px;}
+    input, textarea {padding: 10px; border: 1px solid #ccc; border-radius: 6px;}
+    button.send {background: #0077b6; color: white; padding: 10px; border: none; border-radius: 6px; cursor: pointer;}
+    p#contact-msg {color: green; margin-top: 10px; text-align: center;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>منصة نادي الطلاب الذكية</h1>
+    <p>تم تصميم من طرف BOUHLALA - M</p>
+  </header>
+
+  <nav id="main-menu">
+    <a onclick="showSection('islamic')">إسلاميات</a>
+    <a onclick="showSection('library')">المكتبة الرقمية</a>
+	<a onclick=" location.href='page6.html'"></button ">الجامعات العربية والأوروبية</a>
+    <a onclick="showSection('universities-dz')">الجامعات الجزائرية</a>  
+    <a onclick="showSection('theses')">مواقع رسائل التخرج</a>
+    <a onclick="showSection('community')">المجتمع الطلابي</a>
+	<a onclick="showSection('forum')">منتدى الطلاب</a>
+	<a onclick="showSection('medical-apps')"> الطب والهندسة التعليمي.</a>
+    <a onclick="showSection('student-tools')">كل ما يحتاجه الطالب</a>
+    
+    <a onclick=" location.href='page3 .html'"></button "> قسم الطب و الجراحة
+</a>
+    <a onclick=" location.href='page2.html'"></button "> علم التشريح
+</a>
+     <a onclick=" location.href='Mathématiques.html'"></button "> علم الرياضيات 
+</a>
+ <a onclick=" location.href='Department of Industrial Mechanics.html'"></button "> قسم الميكانيك الصناعية 
+</a>
+    <a onclick="showSection('contact')">اتصل بنا</a>
+    <a href="https://aistudio.google.com/live" target="_blank">مستشاري الخاص</a>
+  </nav>
+
+
+
+
+
+  <!-- ✅ المكتبة الرقمية -->
+   <section id="library" class="hidden">
+    <h2>قائمة المكتبات الرقمية</h2>
+    <ul>
+      <li><a href="https://biblionat.dz/" target="_blank">المكتبة الوطنية الجزائرية</a></li>
+      <li><a href="https://library.harvard.edu/" target="_blank">مكتبة جامعة هارفارد الرقمية</a></li>
+      <li><a href="https://www.noor-book.com/" target="_blank">مكتبة نور</a></li>
+      <li><a href="https://www.adu.ac.ae/library/ar/" target="_blank">مكتبة جامعة ابو ظبي</a></li>
+      <li><a href="https://www.almarifa.org/" target="_blank">قاعدة المعرفة</a></li>
+      <li><a href="https://www.al-mostafa.com/" target="_blank">مكتبة المصطفى</a></li>
+      <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+      <li><a href="https://link.springer.com/" target="_blank">Springer</a></li>
+      <li><a href="https://www.sciencedirect.com/" target="_blank">ScienceDirect</a></li>
+      <li><a href="https://www.jstor.org/" target="_blank">JSTOR</a></li>
+      <li><a href="https://libgen.is/" target="_blank">Library Genesis</a></li>
+    </ul>
+    <button class="back-link" onclick="backToMenu('library')">العودة إلى القائمة الرئيسية</button>
+  </section>
+
+  <!-- ✅ الجامعات الجزائرية -->
+  <section id="universities-dz" class="hidden">
+    <h2>روابط الجامعات الجزائرية</h2>
+    <ul>
+	  <li><a href=" https://www.usthb.dz/" target="_blank"> جامعة هواري بومدين للعلوم والتكنولوجيا </a></li>
+	  <li><a href=" https://www.univ-msila.dz/site/" target="_blank"> جامعة المسيلة </a></li>
+      <li><a href=" https://www.univ-chlef.dz/ar/" target="_blank"> جامعة الشلف </a></li>
+      <li><a href=" https://www.univ-tebessa.dz/arab/" target="_blank"> جامعة تبسة </a></li>
+      <li><a href=" https://lagh-univ.dz/" target="_blank"> جامعة الأغواط </a></li>
+      <li><a href=" https://www.univ-sba.dz/" target="_blank"> جامعة سيدي بلعباس </a></li>
+      <li><a href=" https://univ-biskra.dz/index.php/ar/" target="_blank"> جامعة بسكرة </a></li>
+      <li><a href=" https://www.univ-tlemcen.dz/" target="_blank"> جامعة تلمسان </a></li>
+      <li><a href=" https://www.univ-jijel.dz/index.php/ar/" target="_blank"> جامعة جيجل </a></li>
+      <li><a href=" https://www.univ-adrar.edu.dz/" target="_blank"> جامعة أدرار </a></li>
+      <li><a href=" https://fdsp.univ-ouargla.dz/index.php/ar/" target="_blank"> جامعة ورقلة </a></li>
+      <li><a href=" https://www.univ-ghardaia.edu.dz/" target="_blank"> جامعة غرداية </a></li>
+      <li><a href=" https://univ-relizane.dz/" target="_blank"> جامعة غليزان</a></li>
+      <li><a href=" https://elearning.univ-blida2.dz/" target="_blank"> جامعة البليدة 2 </a></li>
+	  <li><a href=" https://www.univ-blida.dz/" target="_blank"> جامعة البليدة 1</a></li>
+      <li><a href=" https://www.univ-medea.dz/" target="_blank"> جامعة المدية </a></li>
+      <li><a href=" https://www.ummto.dz/" target="_blank"> جامعة تيزي وزو </a></li>
+      <li><a href=" https://www.univ-bejaia.dz/" target="_blank"> جامعة بجاية </a></li>
+      <li><a href=" https://www.univ-setif2.dz/index.php?lang=ar " target="_blank"> جامعة سطيف 2</a></li>
+      <li><a href=" https://www.univ-setif.dz/" target="_blank"> جامعة سطيف 1</a></li>
+	  <li><a href=" https://www.umc.edu.dz/index.php/ar/" target="_blank"> جامعة قسنطينة 1</a></li>
+	  <li><a href=" https://univ-constantine3.dz/ar/" target="_blank"> جامعة قسنطينة 3</a></li>
+      <li><a href=" https://droit.univ-oran2.dz/" target="_blank"> جامعة وهران 2</a></li>
+      <li><a href=" https://www.univ-batna.dz/" target="_blank"> جامعة باتنة 1</a></li>
+      <li><a href=" https://univ-batna2.dz/" target="_blank"> جامعة باتنة 2</a></li>
+      <li><a href=" https://www.univ-annaba.dz/ar/" target="_blank"> جامعة عنابة </a></li>
+      <li><a href="https://www.univ-alger.dz/" target="_blank">1جامعة الجزائر</a></li>
+      <li><a href="https://www.usthb.dz/" target="_blank">جامعة هواري بومدين</a></li>
+      <li><a href="https://www.univ-oran.dz/" target="_blank">جامعة وهران</a></li>
+    </ul>
+    <button class="back-link" onclick="backToMenu('universities-dz')">العودة إلى القائمة الرئيسية</button>
+  </section>
+
+  <!-- ✅ الجامعات العربية والأوروبية -->
+ 
+  
+  
+  
+  
+
+  <!-- ✅ مواقع رسائل التخرج -->
+  <section id="theses" class="hidden">
+    <h2>مواقع تحميل المذكرات و رسائل التخرج</h2>
+    <ul>
+	  <li><a href="https://scholar.google.com/
+" target="_blank"> محرك بحث أكاديمي عالمي للرسائل والأبحاث
+ scholar.google </a></li> 
+      <li><a href="https://www.ebsco.com/
+•	" target="_blank"> EBSCO: قاعدة بيانات شاملة للأبحاث العلمية.
+</a></li>
+      <li><a href="https://www.jstor.org/
+
+•	" target="_blank"> Jstor: منصة توفر الوصول إلى الأبحاث والدوريات العلمية.
+•	</a></li>
+      <li><a href="https://www.proquest.com/
+
+•	" target="_blank"> ProQuest: محرك بحث عالمي لرسائل الماجستير والدكتوراه.
+•	</a></li>
+       <li><a href="https://ndltd.org/
+
+•	" target="_blank"> NDLTD: أكبر محرك بحث مجاني للرسائل العلمية على الإنترنت.
+•	</a></li>
+      <li><a href="https://www.ohiolink.edu/
+
+•	" target="_blank">OhioLINK: محرك بحث لرسائل الماجستير والدكتوراه. 
+•	</a></li>
+
+      <li><a href="https://mothakirat-takharoj.com/
+
+•	" target="_blank">
+•	قاعدة مذكرات التخرج والدراسات الأكاديمية - تحميل رسائل ماجستير 
+•	
+•	</a></li>
+      <li><a href="https://answerthis.io/
+
+•	" target="_blank"> كنز أكثر من 200مليون ورقة بحثية علمية  لأساتذة وللمعلمين والمعلمات وللطلاب الدراسات العليا
+
+•	</a></li>
+
+
+      <li><a href="https://www.memoireonline.com/" target="_blank">مذكرات أونلاين</a></li>
+      <li><a href="https://www.asjp.cerist.dz/" target="_blank">بوابة المجلات العلمية الجزائرية</a></li>
+    </ul>
+    <button class="back-link" onclick="backToMenu('theses')">العودة إلى القائمة الرئيسية</button>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <!-- ✅ المجتمع الطلابي -->
+   <section id="community" class="hidden">
+    <h2>المجتمع الطلابي</h2>
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://www.telegram.org" target="_blank">Telegram</a></li>
+      <li><a href="https://www.discord.com" target="_blank">Discord</a></li>
+      <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+    </ul>
+    <button class="back-link" onclick="backToMenu('community')">العودة إلى القائمة الرئيسية</button>
+  </section>
+  
+  
+  
+  
+  
+   <!-- ✅ منتدى الطلاب -->
+  <section id="forum" class="hidden">
+    <h2 style="font-family: 'Tajawal', sans-serif; font-size: 28px; color: #0077b6; text-align: center;">
+      📝 منتدى الطلاب
+    </h2>
+
+    <!-- 🔹 نموذج إضافة نقاش جديد -->
+    <form id="forum-form" style="margin:20px 0; display:flex; flex-direction:column; gap:10px;">
+      <input type="text" id="topic-title" placeholder="عنوان النقاش" required>
+      <textarea id="topic-content" placeholder="محتوى النقاش" rows="3" required></textarea>
+      <button type="submit" class="send">نشر النقاش</button>
+    </form>
+
+    <!-- 🔹 قائمة النقاشات -->
+    <div id="topics-list">
+      <!-- يتم ملؤها ديناميكيا -->
+    </div>
+
+    <button class="back-link" onclick="backToMenu('forum')">العودة إلى القائمة الرئيسية</button>
+  </section>
+  
+  
+  
+  
+<!-- ✅ قسم تطبيقات الطب -->
+<section id="medical-apps" class="hidden">
+  <h2>📱 تطبيقات الطب</h2>
+
+  <!-- 🔷 1. المراجع الطبية -->
+  <h3>📚 المراجع الطبية</h3>
+  <ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a></li>
+    <li><a href="https://reference.medscape.com/" target="_blank">Medscape Reference</a></li>
+    <li><a href="https://www.uptodate.com/home" target="_blank">UpToDate</a></li>
+  </ul>
+  
+  
+
+  <!-- 🔷 2. الصيدلة وجرعات الأدوية -->
+  <h3>💊 الصيدلة وجرعات الأدوية</h3>
+  <ul>
+    <li><a href="https://www.drugs.com/" target="_blank">Drugs.com</a></li>
+    <li><a href="https://www.micromedexsolutions.com/" target="_blank">Micromedex</a></li>
+    <li><a href="https://www.epocrates.com/" target="_blank">Epocrates</a></li>
+  </ul>
+  
+  
+
+  <!-- 🔷 3. التشخيص الطبي -->
+  <h3>🩺 التشخيص الطبي</h3>
+  <ul>
+    <li><a href="https://www.isabelhealthcare.com/" target="_blank">Isabel Differential Diagnosis</a></li>
+    <li><a href="https://www.pepid.com/" target="_blank">PEPID</a></li>
+  </ul>
+
+
+
+  <!-- 🔷 4. المختبرات والتحاليل الطبية -->
+  <h3>🔬 المختبرات والتحاليل الطبية</h3>
+  <ul>
+    <li><a href="https://labtestsonline.org/" target="_blank">Lab Tests Online</a></li>
+    <li><a href="https://www.rnceus.com/values/nmlabs.html" target="_blank">Normal Lab Values</a></li>
+  </ul>
+  
+  
+
+  <!-- 🔷 5. المهارات السريرية -->
+  <h3>📈 المهارات السريرية</h3>
+  <ul>
+    <li><a href="https://geekymedics.com/" target="_blank">Geeky Medics</a></li>
+    <li><a href="https://www.oscecases.com/" target="_blank">OSCE Cases</a></li>
+  </ul>
+  
+  
+
+  <!-- 🔷 6. أخلاقيات وممارسات طبية -->
+  <h3>👨‍⚕️ أخلاقيات وممارسات طبية</h3>
+  <ul>
+    <li><a href="https://www.who.int/ethics/en/" target="_blank">WHO Ethics</a></li>
+    <li><a href="https://www.ama-assn.org/delivering-care/ama-code-medical-ethics" target="_blank">AMA Code of Ethics</a></li>
+  </ul>
+  
+  
+
+  <!-- 🔷 7. الصحة النفسية والعلاج السلوكي -->
+  <h3>🧠 الصحة النفسية والعلاج السلوكي</h3>
+  <ul>
+    <li><a href="https://www.psychiatry.org/psychiatrists/practice/dsm" target="_blank">DSM-5 Reference</a></li>
+    <li><a href="https://www.psycom.net/25-best-mental-health-apps" target="_blank">Mental Health Apps</a></li>
+  </ul>
+  
+  
+  
+
+  <!-- 🔷 8. تطبيقات طبية متنوعة -->
+  <h3>📱 تطبيقات طبية متنوعة</h3>
+  <ul>
+  <!-- ✅ تطبيقات الطب -->
+    <h3>🔬 تطبيقات الطب</h3>
+    <ul>
+      <li><a href="https://www.micromedexsolutions.com/" target="_blank">Micromedex – معلومات دوائية</a></li>
+      <li><a href="https://www.uptodate.com/" target="_blank">UpToDate – مراجع طبية حديثة</a></li>
+      <li><a href="https://www.medscape.com/" target="_blank">Medscape – أخبار وأدوية</a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed – الأبحاث الطبية</a></li>
+      <li><a href="https://www.amboss.com/us" target="_blank">Amboss – مذكرات ومراجع</a></li>
+      <li><a href="https://www.epocrates.com/" target="_blank">Epocrates – دليل الأدوية</a></li>
+    </ul>
+    <li><a href="https://www.mdcalc.com/" target="_blank">Medical Calculator MDCalc</a></li>
+    <li><a href="https://ecg.utah.edu/" target="_blank">ECG Interpretation</a></li>
+    <li><a href="https://radiopaedia.org/" target="_blank">Radiology Atlas</a></li>
+    <li><a href="https://www.merriam-webster.com/medical" target="_blank">Medical Dictionary</a></li>
+  </ul>
+
+
+
+  <button class="back-link" onclick="backToMenu('medical-apps')">العودة إلى القائمة الرئيسية</button>
+</section>
+
+
+<!-- ✅ كل ما يحتاجه الطالب من برامج وتطبيقات -->
+<section id="student-tools" class="hidden">
+  <h2>📦 كل ما يحتاجه الطالب من برامج وتطبيقات</h2>
+
+  <!-- 📁 برامج Office والتعامل مع الملفات -->
+  <h3>📁 برامج Office والتعامل مع الملفات</h3>
+  <ul>
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>برامج الكمبيوتر التعليمية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Cairo', sans-serif; box-sizing: border-box; margin: 0; padding: 0;}
+    body { background: #f4f4f4; color: #333; line-height: 1.6; padding: 20px;}
+    section { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    h2 { color: #0077b6; text-align: center; margin-bottom: 20px;}
+    h3 { color: #023e8a; margin: 20px 0 10px;}
+    ul { list-style-type: none; margin-bottom: 20px;}
+    li { margin: 5px 0;}
+    li a { text-decoration: none; color: #0077b6;}
+    button.back-link { display: block; margin: 20px auto 0; background: #0077b6; color: white; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer;}
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>🖥️💡 برامج الكمبيوتر التعليمية</h2>
+
+    <!-- ✅ برامج مايكروسوفت أوفيس -->
+    <h3>📝 برامج مايكروسوفت أوفيس</h3>
+    <ul>
+      <li><a href="https://www.microsoft.com/ar-sa/microsoft-365/word" target="_blank">Word – كتابة المستندات</a></li>
+      <li><a href="https://www.microsoft.com/ar-sa/microsoft-365/excel" target="_blank">Excel – الجداول والبيانات</a></li>
+      <li><a href="https://www.microsoft.com/ar-sa/microsoft-365/powerpoint" target="_blank">PowerPoint – العروض التقديمية</a></li>
+    </ul>
+
+    <!-- ✅ برامج التصميم -->
+    <h3>🎨 برامج التصميم</h3>
+    <ul>
+      <li><a href="https://www.adobe.com/products/photoshop.html" target="_blank">Photoshop – تحرير الصور</a></li>
+      <li><a href="https://www.adobe.com/products/illustrator.html" target="_blank">Illustrator – تصميم الرسوميات</a></li>
+      <li><a href="https://www.canva.com/" target="_blank">Canva – تصميم بسيط وسريع</a></li>
+    </ul>
+
+    <!-- ✅ برامج البرمجة -->
+    <h3>💻 برامج البرمجة</h3>
+    <ul>
+      <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code – محرر أكواد</a></li>
+      <li><a href="https://developer.android.com/studio" target="_blank">Android Studio – تطوير تطبيقات أندرويد</a></li>
+      <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm – برمجة بايثون</a></li>
+    </ul>
+
+    <!-- ✅ برامج أخرى مفيدة للطلاب -->
+    <h3>🔧 برامج أخرى مفيدة للطلاب</h3>
+    <ul>
+      <li><a href="https://www.teamviewer.com/" target="_blank">TeamViewer – تحكم عن بعد</a></li>
+	  <li><a href=" https://ninite.com/" target="_blank"> جميع برامج الكمبيوتر</a></li>
+      <li><a href="https://www.win-rar.com/" target="_blank">WinRAR – فك وضغط الملفات</a></li>
+      <li><a href="https://www.adobe.com/acrobat/pdf-reader.html" target="_blank">Adobe Reader – قراءة PDF</a></li>
+    </ul>
+
+    
+
+</body>
+</html>
+
+    <li><a href="https://www.office.com/" target="_blank">Microsoft Office Online</a></li>
+    <li><a href="https://www.google.com/docs/about/" target="_blank">Google Docs, Sheets, Slides</a></li>
+    <li><a href="https://www.wps.com/" target="_blank">WPS Office</a></li>
+    <li><a href="https://get.adobe.com/reader/" target="_blank">Adobe Acrobat Reader PDF</a></li>
+    <li><a href="https://smallpdf.com/" target="_blank">SmallPDF</a></li>
+    <li><a href="https://tools.pdf24.org/ar/" target="_blank">PDF24 Tools</a></li>
+  </ul>
+
+  <!-- 💻 البرمجة وتطوير الويب -->
+  <h3>💻 البرمجة وتطوير الويب</h3>
+  <ul>
+    <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+    <li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a></li>
+    <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+    <li><a href="https://replit.com/" target="_blank">Replit</a></li>
+    <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
+    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+  </ul>
+
+  <!-- 🎨 التصميم والرسم الهندسي -->
+  <h3>🎨 التصميم والرسم الهندسي</h3>
+  <ul>
+    <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+    <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+    <li><a href="https://www.autodesk.com/products/autocad/overview" target="_blank">AutoCAD</a></li>
+    <li><a href="https://www.sketchup.com/" target="_blank">SketchUp</a></li>
+    <li><a href="https://www.gimp.org/" target="_blank">GIMP</a></li>
+  </ul>
+
+  <!-- 📝 التدوين والقراءة -->
+  <h3>📝 التدوين والقراءة</h3>
+  <ul>
+    <li><a href="https://www.mendeley.com/" target="_blank">Mendeley</a></li>
+    <li><a href="https://www.grammarly.com/" target="_blank">Grammarly</a></li>
+    <li><a href="https://www.zotero.org/" target="_blank">Zotero</a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=org.readera&hl=ar&gl=US" target="_blank">ReadEra</a></li>
+  </ul>
+
+  <!-- 🧮 الرياضيات والإحصاء -->
+  <h3>🧮 الرياضيات والإحصاء</h3>
+  <ul>
+    <li><a href="https://matlab.mathworks.com/" target="_blank">MATLAB Online</a></li>
+    <li><a href="https://www.geogebra.org/" target="_blank">GeoGebra</a></li>
+    <li><a href="https://www.desmos.com/" target="_blank">Desmos Graphing Calculator</a></li>
+    <li><a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a></li>
+  </ul>
+
+  <!-- 🌐 التعليم عن بعد والاجتماعات -->
+  <h3>🌐 التعليم عن بعد والاجتماعات</h3>
+  <ul>
+    <li><a href="https://zoom.us/" target="_blank">Zoom</a></li>
+    <li><a href="https://meet.google.com/" target="_blank">Google Meet</a></li>
+    <li><a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a></li>
+  </ul>
+
+  <!-- 🧠 الصحة النفسية والإنتاجية -->
+  <h3>🧠 الصحة النفسية والإنتاجية</h3>
+  <ul>
+    <li><a href="https://www.forestapp.cc/" target="_blank">Forest</a></li>
+    <li><a href="https://pomofocus.io/" target="_blank">Pomodoro Timer</a></li>
+    <li><a href="https://keep.google.com/" target="_blank">Google Keep</a></li>
+    <li><a href="https://todoist.com/" target="_blank">Todoist</a></li>
+  </ul>
+
+  <button class="back-link" onclick="backToMenu('student-tools')">العودة إلى القائمة الرئيسية</button>
+</section>
+
+
+
+
+<!-- ✅ صفحة إسلاميات -->
+<section id="islamic" class="hidden">
+  <h2>🕌 إسلاميات</h2>
+
+  <!-- 📖 القرآن الكريم -->
+  <h3>📖 القرآن الكريم</h3>
+  <ul>
+    <li><a href="https://quran.com/" target="_blank">Quran.com - تلاوة وترجمة</a></li>
+    <li><a href="https://surahquran.com/" target="_blank">SurahQuran.com - المصحف الإلكتروني</a></li>
+    <li><a href="https://www.tanzil.net/" target="_blank">Tanzil.net - تنزيل القرآن</a></li>
+  </ul>
+
+  <!-- 🌸 السنة النبوية -->
+  <h3>🌸 السنة النبوية</h3>
+  <ul>
+    <li><a href="https://sunnah.com/" target="_blank">Sunnah.com - كتب الحديث</a></li>
+    <li><a href="https://dorar.net/hadith" target="_blank">دورار - موسوعة الأحاديث</a></li>
+    <li><a href="https://hadithcollection.com/" target="_blank">HadithCollection.com</a></li>
+  </ul>
+
+  <!-- ⚖️ الشريعة الإسلامية -->
+  <h3>⚖️ الشريعة الإسلامية</h3>
+  <ul>
+    <li><a href="https://islamqa.info/ar" target="_blank">الإسلام سؤال وجواب</a></li>
+    <li><a href="https://binbaz.org.sa/" target="_blank">موقع الشيخ ابن باز</a></li>
+    <li><a href="https://www.alifta.gov.sa/" target="_blank">اللجنة الدائمة للبحوث العلمية والإفتاء</a></li>
+    <li><a href="https://www.islamweb.net/" target="_blank">إسلام ويب</a></li>
+  </ul>
+
+  <p style="text-align:center; margin-top:20px;">تم تصميم هذا التطبيق من طرف BOUHLALA - M</p>
+
+  <button class="back-link" onclick="backToMenu('islamic')">العودة إلى القائمة الرئيسية</button>
+  
+</section>
+
+
+
+
+  <!-- ✅ اتصل بنا -->
+  <section id="contact" class="hidden">
+    <h2>اتصل بنا</h2>
+    <form onsubmit="event.preventDefault(); showWelcome();">
+      <input type="text" placeholder="الاسم" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea placeholder="رسالتك" rows="4" required></textarea>
+      <button type="submit" class="send">إرسال</button>
+      <p id="contact-msg"></p>
+    </form>
+    <button class="back-link" onclick="backToMenu('contact')">العودة إلى القائمة الرئيسية</button>
+  </section>
+
+  <footer>
+    <p>©  BOUHLALA - M جميع الحقوق محفوظة - نادي الطلاب</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.getElementById("main-menu").style.display = "none";
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function backToMenu(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.getElementById("main-menu").style.display = "flex";
+    }
+    function showWelcome() {
+      document.getElementById('contact-msg').textContent = 'تم إرسال رسالتكم بنجاح. شكرًا لتواصلكم معنا!';
+    }
+  </script>
+
+</body>
+</html>
