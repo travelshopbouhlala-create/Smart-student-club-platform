@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>قسم علم التشريح</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    * {font-family: 'Cairo', sans-serif; box-sizing: border-box;}
+    body {background: #f4f4f4; color: #333; line-height: 1.6; padding: 20px;}
+    header, footer {background: #0077b6; color: white; text-align: center; padding: 20px; border-radius: 8px;}
+    h2 {color: #0077b6; margin-top: 20px;}
+    table {width: 100%; border-collapse: collapse; margin: 20px 0;}
+    table, th, td {border: 1px solid #ccc;}
+    th, td {padding: 10px; text-align: center;}
+    a {color: #0077b6; text-decoration: none;}
+    input[type="text"] {width: 100%; padding: 10px; margin: 10px 0;}
+    button {background: #0077b6; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; margin-top:10px;}
+    .quiz-section {background: white; padding: 20px; border-radius: 10px; margin-top: 20px;}
+    .back-button-container {text-align: center; margin: 30px 0;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 قسم علم التشريح</h1>
+    <p>منصة نادي الطلاب الطبية - تصميم BOUHLALA - M</p>
+  </header>
+  
+  <!-- ✅ جدول دراسي للتشريح -->
+  <h2>📅 الجدول الدراسي للتشريح</h2>
+  <table>
+    <tr>
+      <th>اليوم</th>
+      <th>القسم</th>
+      <th>رابط عربي</th>
+      <th>رابط أجنبي</th>
+    </tr>
+    <tr>
+      <td>1-2</td>
+      <td>مقدمة التشريح</td>
+      <td><a href="https://wikiteb.com/anatomy-introduction" target="_blank">ويكي طب</a></td>
+      <td><a href="https://www.kenhub.com/en/start/anatomy" target="_blank">Kenhub</a></td>
+    </tr>
+    <tr>
+      <td>3-5</td>
+      <td>الرأس والرقبة</td>
+      <td><a href="https://mothakirat-takharoj.com/head-neck-anatomy" target="_blank">مذكرات تخرج</a></td>
+      <td><a href="https://teachmeanatomy.info/head/" target="_blank">TeachMeAnatomy</a></td>
+    </tr>
+    <tr>
+      <td>6-8</td>
+      <td>الأطراف العليا</td>
+      <td><a href="https://wikiteb.com/upper-limb-anatomy" target="_blank">ويكي طب</a></td>
+      <td><a href="https://teachmeanatomy.info/upper-limb/" target="_blank">TeachMeAnatomy</a></td>
+    </tr>
+    <!-- يمكنك إكمال باقي الجدول بنفس النمط -->
+  </table>
+
+  <!-- ✅ روابط الخرائط الذهنية -->
+  <h2>🧠 أفضل الخرائط الذهنية للتشريح</h2>
+  <h3>🔹 بالعربية</h3>
+  <ul>
+    <li><a href="https://mothakirat-takharoj.com/head-neck-mindmap" target="_blank">خريطة رأس و رقبة</a></li>
+    <li><a href="https://mothakirat-takharoj.com/upper-limb-mindmap" target="_blank">خريطة الأطراف العليا</a></li>
+  </ul>
+  <h3>🔹 بالإنجليزية</h3>
+  <ul>
+    <li><a href="https://www.kenhub.com/en/start/anatomy" target="_blank">Kenhub Mind Maps</a></li>
+    <li><a href="https://teachmeanatomy.info/upper-limb/" target="_blank">TeachMeAnatomy Diagrams</a></li>
+  </ul>
+
+  <!-- ✅ محرك بحث طبي موحد -->
+  <h2>🔎 محرك بحث طبي موحد</h2>
+  <form action="https://www.google.com/search" method="get" target="_blank">
+    <input type="text" name="q" placeholder="ابحث في التشريح الطبي...">
+    <button type="submit">بحث</button>
+  </form>
+
+  <!-- ✅ صفحة اختبارات تشريح تفاعلية -->
+  <section class="quiz-section">
+    <h2>📝 اختبار علم التشريح</h2>
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">🔎 إرسال الإجابات</button>
+    <p id="score"></p>
+  </section>
+
+  <!-- ✅ زر العودة إلى الصفحة الرئيسية -->
+  <div class="back-button-container">
+    <button onclick="location.href='index اسلاميات.html'">🏠 العودة إلى الصفحة الرئيسية</button>
+  </div>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © BOUHLALA - M</p>
+  </footer>
+
+  <script>
+    // ✅ كود الاختبار
+    const questions = [
+      {
+        q: "🔹 ما هو أكبر عظم في جسم الإنسان؟",
+        options: ["عظم الفخذ", "عظم العضد", "عظم الجمجمة"],
+        answer: "عظم الفخذ"
+      },
+      {
+        q: "🔹 كم عدد فقرات العمود الفقري؟",
+        options: ["33", "25", "28"],
+        answer: "33"
+      }
+    ];
+
+    const container = document.getElementById("quiz-container");
+    questions.forEach((q, i) => {
+      container.innerHTML += `<p>${q.q}</p>`;
+      q.options.forEach(opt => {
+        container.innerHTML += `<label><input type="radio" name="q${i}" value="${opt}"> ${opt}</label><br>`;
+      });
+    });
+
+    function submitQuiz(){
+      let score = 0;
+      questions.forEach((q, i) => {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if(selected && selected.value === q.answer) score++;
+      });
+      document.getElementById("score").innerHTML = `✅ نتيجتك: ${score} من ${questions.length}`;
+    }
+  </script>
+
+</body>
+</html>

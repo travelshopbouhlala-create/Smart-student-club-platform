@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة نادي الطلاب الذكية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    * {font-family: 'Cairo', sans-serif; box-sizing: border-box; margin: 0; padding: 0;}
+    body {background: #f4f4f4; color: #333; line-height: 1.6; padding: 20px;}
+    header, footer {background: #004d7a; color: white; text-align: center; padding: 20px; border-radius: 8px;}
+    nav {display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0;}
+    nav a {padding: 10px 15px; background: #0077b6; color: white; border-radius: 6px; text-decoration: none; cursor: pointer;}
+    section {margin-bottom: 30px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    h2 {color: #0077b6; margin-bottom: 15px; text-align: center;}
+    h3 {color: #007BFF;}
+    p {font-size: 14px; color:#0e68e6;}
+    a.button-link {display: inline-block; margin-top: 10px; color: #fff; background: #007BFF; padding: 8px 12px; border-radius: 4px; text-decoration: none;}
+    .hidden {display: none;}
+    .grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;}
+    button.back-link {display: block; width: fit-content; margin: 20px auto 0; background: #0077b6; color: white; padding: 10px 20px; border-radius: 6px; text-align: center; border: none; cursor: pointer;}
+  </style>
+</head>
+<body>
+
+   <header>
+    <h1>منصة نادي الطلاب الذكية</h1>
+    <p>تم تصميم من طرف BOUHLALA - M</p>
+  </header>
+
+
+  <nav id="main-menu">
+     
+    <a onclick="showSection('Department of Medicine and Surgery')">قسم جمعيات الطب و الجراحة</a>
+	<a onclick="showSection('dentistry-section')">قسم طب الأسنان</a>
+    <a onclick=" location.href='page5.html'"></button ">تخصصات  طب الأسنان
+  </nav>
+
+  </nav>
+
+  <!-- ✅ قسم الطب -->
+  <section id="Department of Medicine and Surgery" class="hidden">
+    <h2>🩺 جمعيات الطب و الجراحة</h2>
+    <div class="grid">
+
+      <!-- 🔷 الأقسام الأساسية السابقة (موجودة بالفعل) -->
+
+      <!-- 🔷 أمراض الغدد الصماء -->
+      <div class="card">
+        <h3>أمراض الغدد الصماء</h3>
+        <p>تهتم بالغدد مثل الغدة الدرقية والسكري واضطرابات الهرمونات.</p>
+        <a href="https://www.endocrine.org/" target="_blank" class="button-link">جمعية الغدد الصماء</a>
+      </div>
+
+      <!-- 🔷 أمراض الكلى (النيفرولوجي) -->
+      <div class="card">
+        <h3>أمراض الكلى (النيفرولوجي)</h3>
+        <p>تشخيص وعلاج أمراض الكلى مثل الفشل الكلوي والتهابات الكلى.</p>
+        <a href="https://www.kidney.org/" target="_blank" class="button-link">مؤسسة الكلى الوطنية</a>
+      </div>
+
+      <!-- 🔷 🔹 الجراحة التخصصية -->
+      <div class="card">
+        <h3>جراحة الأعصاب</h3>
+        <p>العمليات الجراحية للدماغ والحبل الشوكي والأعصاب الطرفية.</p>
+        <a href="https://www.aans.org/" target="_blank" class="button-link">جمعية جراحة الأعصاب الأمريكية</a>
+      </div>
+
+      <div class="card">
+        <h3>جراحة القلب والصدر</h3>
+        <p>جراحات القلب والشرايين والرئتين مثل تبديل الصمامات.</p>
+        <a href="https://www.sts.org/" target="_blank" class="button-link">جمعية جراحة الصدر</a>
+      </div>
+
+      <div class="card">
+        <h3>جراحة الأوعية الدموية</h3>
+        <p>جراحات الشرايين والأوردة مثل الدوالي وتمدد الشريان الأبهر.</p>
+        <a href="https://vascular.org/" target="_blank" class="button-link">جمعية جراحة الأوعية الدموية</a>
+      </div>
+
+      <div class="card">
+        <h3>الجراحة التجميلية والترميمية</h3>
+        <p>تصحيح التشوهات وتحسين المظهر واستعادة الوظيفة.</p>
+        <a href="https://www.plasticsurgery.org/" target="_blank" class="button-link">الجمعية الأمريكية للجراحة التجميلية</a>
+      </div>
+
+      <div class="card">
+        <h3>جراحة الأورام</h3>
+        <p>إزالة الأورام السرطانية والكتل جراحيا.</p>
+        <a href="https://www.surgonc.org/" target="_blank" class="button-link">جمعية جراحة الأورام</a>
+      </div>
+
+      <div class="card">
+        <h3>جراحة المسالك البولية</h3>
+        <p>العمليات الجراحية للجهاز البولي والتناسلي الذكري.</p>
+        <a href="https://www.auanet.org/" target="_blank" class="button-link">جمعية جراحة المسالك البولية</a>
+      </div>
+
+      <div class="card">
+        <h3>جراحة الأطفال</h3>
+        <p>العمليات الجراحية الخاصة بالأطفال وحديثي الولادة.</p>
+        <a href="https://www.pedsurglibrary.com/" target="_blank" class="button-link">مكتبة جراحة الأطفال</a>
+      </div>
+
+      <!-- 🔷 🔹 الطب الباطني التخصصي -->
+      <div class="card">
+        <h3>أمراض الروماتيزم</h3>
+        <p>أمراض المفاصل والعضلات مثل الروماتويد والذئبة.</p>
+        <a href="https://www.rheumatology.org/" target="_blank" class="button-link">الكلية الأمريكية لأمراض الروماتيزم</a>
+      </div>
+
+      <div class="card">
+        <h3>أمراض الجهاز الهضمي</h3>
+        <p>تشخيص وعلاج أمراض المعدة والكبد والأمعاء.</p>
+        <a href="https://gi.org/" target="_blank" class="button-link">الكلية الأمريكية لأمراض الجهاز الهضمي</a>
+      </div>
+
+      <div class="card">
+        <h3>الأمراض المعدية</h3>
+        <p>تشخيص وعلاج الأمراض البكتيرية والفيروسية والفطرية.</p>
+        <a href="https://www.idsociety.org/" target="_blank" class="button-link">جمعية الأمراض المعدية</a>
+      </div>
+
+      <div class="card">
+        <h3>أمراض الكبد</h3>
+        <p>تشخيص وعلاج أمراض الكبد مثل التليف الكبدي والتهاب الكبد.</p>
+        <a href="https://www.aasld.org/" target="_blank" class="button-link">جمعية الكبد الأمريكية</a>
+      </div>
+
+      <!-- 🔷 🔹 أقسام داعمة -->
+      <div class="card">
+        <h3>الأشعة التشخيصية</h3>
+        <p>تشخيص الأمراض باستخدام الأشعة السينية والمقطعية والرنين المغناطيسي.</p>
+        <a href="https://www.rsna.org/" target="_blank" class="button-link">جمعية الأشعة التشخيصية</a>
+      </div>
+
+      <div class="card">
+        <h3>الطب المخبري والتحاليل الطبية</h3>
+        <p>إجراء التحاليل المخبرية لتشخيص ومتابعة الأمراض.</p>
+        <a href="https://www.aacc.org/" target="_blank" class="button-link">الجمعية الأمريكية للكيمياء السريرية</a>
+      </div>
+
+      <div class="card">
+        <h3>العلاج الطبيعي وإعادة التأهيل</h3>
+        <p>إعادة التأهيل الحركي وتحسين القدرة البدنية بعد الإصابات.</p>
+        <a href="https://www.apta.org/" target="_blank" class="button-link">جمعية العلاج الطبيعي الأمريكية</a>
+      </div>
+	  <!-- 🔷 طب الأسنان -->
+<div class="card">
+  <h3>طب الأسنان</h3>
+  <p>يعالج أمراض الفم والأسنان واللثة ويشمل التركيبات وتقويم الأسنان.</p>
+  <a href="https://www.ada.org/" target="_blank" class="button-link">الجمعية الأمريكية لطب الأسنان</a>
+</div>
+
+<!-- 🔷 الطب الشرعي -->
+<div class="card">
+  <h3>الطب الشرعي</h3>
+  <p>يختص بتحديد أسباب الوفاة وتحليل الأدلة الجنائية الطبية.</p>
+  <a href="https://www.aafs.org/" target="_blank" class="button-link">الأكاديمية الأمريكية للطب الشرعي</a>
+</div>
+
+<!-- 🔷 طب الشيخوخة -->
+<div class="card">
+  <h3>طب الشيخوخة</h3>
+  <p>يعالج مشاكل المسنين الصحية مثل الخرف و هشاشة العظام.</p>
+  <a href="https://www.americangeriatrics.org/" target="_blank" class="button-link">الجمعية الأمريكية لطب الشيخوخة</a>
+</div>
+
+<!-- 🔷 طب الأطفال -->
+<div class="card">
+  <h3>طب الأطفال</h3>
+  <p>يتخصص في تشخيص وعلاج أمراض الأطفال وحديثي الولادة.</p>
+  <a href="https://www.aap.org/" target="_blank" class="button-link">الأكاديمية الأمريكية لطب الأطفال</a>
+</div>
+
+<!-- 🔷 الطب الرياضي -->
+<div class="card">
+  <h3>الطب الرياضي</h3>
+  <p>يعالج إصابات الرياضيين ويحسن الأداء الجسدي والوقاية من الإصابات.</p>
+  <a href="https://www.acsm.org/" target="_blank" class="button-link">الكلية الأمريكية للطب الرياضي</a>
+</div>
+
+<!-- 🔷 الطب النفسي للأطفال والمراهقين -->
+<div class="card">
+  <h3>الطب النفسي للأطفال والمراهقين</h3>
+  <p>يعالج الاضطرابات النفسية عند الأطفال والمراهقين مثل فرط الحركة.</p>
+  <a href="https://www.aacap.org/" target="_blank" class="button-link">الأكاديمية الأمريكية للطب النفسي للأطفال</a>
+</div>
+
+
+      <div class="card">
+        <h3>الصحة العامة والوبائيات</h3>
+        <p>الوقاية ومكافحة الأمراض ودراسة توزيعها في المجتمع.</p>
+        <a href="https://www.cdc.gov/" target="_blank" class="button-link">مراكز السيطرة على الأمراض</a>
+      </div>
+	  
+
+    </div>
+	
+
+    <button class="back-link" onclick="backToMenu('medical-section')">العودة إلى القائمة الرئيسية</button>
+  </section>
+  <!-- ✅ قسم طب الأسنان مع اختبارات تفاعلية -->
+<section id="dentistry-section" class="hidden">
+  <h2>🦷 قسم طب الأسنان</h2>
+  <div class="grid">
+
+    <!-- 🔷 علاج جذور الأسنان -->
+    <div class="card">
+      <h3>علاج جذور الأسنان</h3>
+      <p>يعالج التهابات العصب اللبّي وإجراءات حشو الجذور والحفاظ على الأسنان.</p>
+      <a href="https://www.aae.org/" target="_blank" class="button-link">الجمعية الأمريكية لعلاج الجذور</a>
+      <button onclick="showQuiz('root-canal-quiz')">اختبر نفسك</button>
+    </div>
+
+    <!-- 🔷 أمراض اللثة -->
+    <div class="card">
+      <h3>أمراض اللثة</h3>
+      <p>تشمل تشخيص وعلاج التهاب ونزيف وتراجع اللثة وحماية الأنسجة الداعمة للأسنان.</p>
+      <a href="https://www.perio.org/" target="_blank" class="button-link">الجمعية الأمريكية لأمراض اللثة</a>
+      <button onclick="showQuiz('perio-quiz')">اختبر نفسك</button>
+    </div>
+
+    <!-- 🔷 مواد طب الأسنان -->
+    <div class="card">
+      <h3>مواد طب الأسنان</h3>
+      <p>دراسة المواد المستخدمة في الحشوات والتركيبات والتقويم وتطبيقاتها السريرية.</p>
+      <a href="https://onlinelibrary.wiley.com/journal/1600051x" target="_blank" class="button-link">مجلة مواد طب الأسنان</a>
+      <button onclick="showQuiz('dental-materials-quiz')">اختبر نفسك</button>
+    </div>
+
+    <!-- 🔷 طب أسنان الأطفال -->
+    <div class="card">
+      <h3>طب أسنان الأطفال</h3>
+      <p>يعالج مشاكل أسنان الأطفال والوقاية والعناية بصحة الفم لديهم.</p>
+      <a href="https://www.aapd.org/" target="_blank" class="button-link">الأكاديمية الأمريكية لطب أسنان الأطفال</a>
+      <button onclick="showQuiz('pedodontics-quiz')">اختبر نفسك</button>
+    </div>
+
+  </div>
+
+  <!-- ✅ اختبارات تفاعلية -->
+  <div id="root-canal-quiz" class="hidden">
+    <h3>اختبار علاج جذور الأسنان</h3>
+    <p>🔹 هل تستخدم أشعة X لتشخيص قنوات الجذر؟</p>
+    <button onclick="alert('إجابة صحيحة ✅')">نعم</button>
+    <button onclick="alert('إجابة خاطئة ❌')">لا</button>
+  </div>
+
+  <div id="perio-quiz" class="hidden">
+    <h3>اختبار أمراض اللثة</h3>
+    <p>🔹 هل التهاب اللثة غير قابل للعلاج تمامًا؟</p>
+    <button onclick="alert('إجابة خاطئة ❌')">نعم</button>
+    <button onclick="alert('إجابة صحيحة ✅')">لا</button>
+  </div>
+
+  <div id="dental-materials-quiz" class="hidden">
+    <h3>اختبار مواد طب الأسنان</h3>
+    <p>🔹 هل الأملغم يُستخدم في الحشوات الدائمة الخلفية؟</p>
+    <button onclick="alert('إجابة صحيحة ✅')">نعم</button>
+    <button onclick="alert('إجابة خاطئة ❌')">لا</button>
+  </div>
+
+  <div id="pedodontics-quiz" class="hidden">
+    <h3>اختبار طب أسنان الأطفال</h3>
+    <p>🔹 هل يتم خلع الأسنان اللبنية دائمًا عند التسوس؟</p>
+    <button onclick="alert('إجابة خاطئة ❌')">نعم</button>
+    <button onclick="alert('إجابة صحيحة ✅')">لا</button>
+    </div>
+    </div>
+    
+  </section>
+  <!-- ✅ زر العودة إلى الصفحة الرئيسية -->
+  <div class="back-button-container">
+    <button onclick="location.href='index اسلاميات.html'">🏠 العودة إلى الصفحة الرئيسية</button>
+  </div>
+  <footer>
+    <p>© BOUHLALA - M جميع الحقوق محفوظة - نادي الطلاب</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.getElementById("main-menu").style.display = "none";
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function backToMenu(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.getElementById("main-menu").style.display = "flex";
+    }
+  </script>
+  <script>
+  function showSection(id) {
+    // إخفاء كل الأقسام أولًا
+    document.querySelectorAll("section").forEach(sec => sec.classList.add("hidden"));
+    // إخفاء جميع الاختبارات داخل قسم الأسنان إذا كان القسم هو الأسنان
+    if(id === "dentistry-section"){
+      document.querySelectorAll('#dentistry-section div[id$="-quiz"]').forEach(div => div.classList.add('hidden'));
+    }
+    // إخفاء القائمة الرئيسية
+    document.getElementById("main-menu").style.display = "none";
+    // عرض القسم المطلوب
+    document.getElementById(id).classList.remove("hidden");
+  }
+
+  function backToMenu(id) {
+    // إخفاء جميع الأقسام
+    document.querySelectorAll("section").forEach(sec => sec.classList.add("hidden"));
+    // عرض القائمة الرئيسية
+    document.getElementById("main-menu").style.display = "flex";
+  }
+
+  function showQuiz(id) {
+    // إخفاء جميع الاختبارات أولًا
+    document.querySelectorAll('#dentistry-section div[id$="-quiz"]').forEach(div => div.classList.add('hidden'));
+    // عرض الاختبار المطلوب
+    document.getElementById(id).classList.remove('hidden');
+  }
+</script>
+
+
+</body>
+
+</html>

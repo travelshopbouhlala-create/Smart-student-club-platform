@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة أقسام الطب</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; }
+    .header { background: #007b5e; color: #fff; text-align: center; padding: 10px; font-size: 14px; }
+    h1 { text-align: center; color: #333; margin-top: 10px; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 20px; }
+    .btn { display: block; background: #007b5e; color: #fff; text-decoration: none; padding: 15px; border-radius: 8px; text-align: center; font-size: 16px; transition: background 0.3s; }
+    .btn:hover { background: #005f48; }
+    .section { display: none; padding: 20px; max-width: 800px; margin: auto; }
+    .section h2 { color: #007b5e; }
+    .section p { line-height: 1.7; }
+    .links a { display: block; background: #007b5e; color: #fff; text-decoration: none; padding: 10px; border-radius: 6px; margin: 10px 0; text-align: center; }
+    .links a:hover { background: #005f48; }
+    .back { text-align: center; margin-top: 20px; }
+    .back button { padding: 10px 20px; font-size: 16px; background: #007b5e; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+    .back button:hover { background: #005f48; }
+  </style>
+</head>
+<body>
+
+  <div class="header">تم تصميم من طرف BOUHLALA - M</div>
+
+  <div id="main">
+    <h1>منصة أقسام الطب</h1>
+    <div class="container">
+      <a href="#" class="btn" onclick="showSection('anatomy')">علم التشريح (Anatomy)</a>
+      <a href="#" class="btn" onclick="showSection('physiology')">علم وظائف الأعضاء (Physiology)</a>
+      <a href="#" class="btn" onclick="showSection('biochemistry')">الكيمياء الحيوية (Biochemistry)</a>
+      <a href="#" class="btn" onclick="showSection('pathology')">علم الأمراض (Pathology)</a>
+      <a href="#" class="btn" onclick="showSection('pharmacology')">علم الأدوية (Pharmacology)</a>
+      <a href="#" class="btn" onclick="showSection('microbiology')">علم الأحياء الدقيقة (Microbiology)</a>
+	  <a href="#" class="btn" onclick="showSection('internal')">الطب الباطني (Internal Medicine)</a>
+      <a href="#" class="btn" onclick="showSection('pediatrics')">طب الأطفال (Pediatrics)</a>
+      <a href="#" class="btn" onclick="showSection('obgyn')">طب النساء والتوليد (Obstetrics & Gynecology)</a>
+      <a href="#" class="btn" onclick="showSection('surgery')">الجراحة العامة (General Surgery)</a>
+      <a href="#" class="btn" onclick="showSection('neurology')">طب الأعصاب (Neurology)</a>
+      <a href="#" class="btn" onclick="showSection('psychiatry')">الطب النفسي (Psychiatry)</a>
+      <a href="#" class="btn" onclick="showSection('ophthalmology')">طب العيون (Ophthalmology)</a>
+
+      <!-- أضف باقي الأقسام هنا بنفس الطريقة -->
+    </div>
+  </div>
+
+  <!-- ✅ نموذج قسم: علم التشريح -->
+  <div id="anatomy" class="section">
+    <h2>علم التشريح (Anatomy)</h2>
+    <p>علم التشريح هو دراسة بنية جسم الإنسان وأجزائه وعلاقتها ببعضها. يعد أساس جميع العلوم الطبية لفهم الجسم بشكل صحيح.</p>
+    <div class="links">
+      <a href="https://www.kenhub.com" target="_blank">شرح التشريح - Kenhub</a>
+      <a href="https://www.anatomyzone.com" target="_blank">موقع AnatomyZone</a>
+      <a href="https://www.youtube.com/user/AnatomyZone" target="_blank">قناة AnatomyZone على يوتيوب</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ نموذج قسم: علم وظائف الأعضاء -->
+  <div id="physiology" class="section">
+    <h2>علم وظائف الأعضاء (Physiology)</h2>
+    <p>يدرس علم وظائف الأعضاء كيفية عمل أعضاء الجسم المختلفة للحفاظ على الحياة والتوازن الداخلي.</p>
+    <div class="links">
+      <a href="https://www.physio-pedia.com" target="_blank">موقع Physio-pedia</a>
+      <a href="https://www.cvphysiology.com" target="_blank">CV Physiology</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ نموذج قسم: الكيمياء الحيوية -->
+  <div id="biochemistry" class="section">
+    <h2>الكيمياء الحيوية (Biochemistry)</h2>
+    <p>يدرس التفاعلات الكيميائية والعمليات الحيوية داخل الجسم لفهم مسارات الطاقة والتمثيل الغذائي.</p>
+    <div class="links">
+      <a href="https://www.khanacademy.org/science/biology" target="_blank">كيمياء حيوية - Khan Academy</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ نموذج قسم: علم الأمراض -->
+  <div id="pathology" class="section">
+    <h2>علم الأمراض (Pathology)</h2>
+    <p>يدرس التغيرات في الخلايا والأنسجة نتيجة الأمراض لفهم أسبابها وآلياتها.</p>
+    <div class="links">
+      <a href="https://www.pathologyoutlines.com" target="_blank">Pathology Outlines</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ نموذج قسم: علم الأدوية -->
+  <div id="pharmacology" class="section">
+    <h2>علم الأدوية (Pharmacology)</h2>
+    <p>يدرس تأثيرات الأدوية على الجسم واستخدامها في علاج الأمراض.</p>
+    <div class="links">
+      <a href="https://www.pharmacologyeducation.org" target="_blank">Pharmacology Education</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ نموذج قسم: علم الأحياء الدقيقة -->
+  <div id="microbiology" class="section">
+    <h2>علم الأحياء الدقيقة (Microbiology)</h2>
+    <p>يدرس الكائنات الدقيقة مثل البكتيريا والفيروسات والفطريات ودورها في الأمراض والعدوى.</p>
+    <div class="links">
+      <a href="https://microbiologyinfo.com" target="_blank">Microbiology Info</a>
+    </div>
+    <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+  </div>
+
+  <!-- ✅ يمكنك تكرار نموذج القسم لكل تخصص آخر -->
+
+  <script>
+    function showSection(id) {
+      document.getElementById('main').style.display = 'none';
+      var sections = document.getElementsByClassName('section');
+      for (var i = 0; i < sections.length; i++) { sections[i].style.display = 'none'; }
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+    function goBack() {
+      var sections = document.getElementsByClassName('section');
+      for (var i = 0; i < sections.length; i++) { sections[i].style.display = 'none'; }
+      document.getElementById('main').style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <!-- ✅ الطب الباطني -->
+<div id="internal" class="section">
+  <h2>الطب الباطني (Internal Medicine)</h2>
+  <p>يتعامل مع تشخيص وعلاج الأمراض الباطنية التي تصيب أجهزة الجسم المختلفة بدون تدخل جراحي.</p>
+  <div class="links">
+    <a href="https://www.acponline.org" target="_blank">American College of Physicians</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ طب الأطفال -->
+<div id="pediatrics" class="section">
+  <h2>طب الأطفال (Pediatrics)</h2>
+  <p>يعنى بصحة الأطفال منذ الولادة حتى المراهقة، ويشمل الوقاية والعلاج والنمو والتطور.</p>
+  <div class="links">
+    <a href="https://www.aap.org" target="_blank">American Academy of Pediatrics</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ طب النساء والتوليد -->
+<div id="obgyn" class="section">
+  <h2>طب النساء والتوليد (Obstetrics & Gynecology)</h2>
+  <p>يتناول صحة الجهاز التناسلي الأنثوي والحمل والولادة وأمراض النساء المختلفة.</p>
+  <div class="links">
+    <a href="https://www.acog.org" target="_blank">American College of Obstetricians and Gynecologists</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ الجراحة العامة -->
+<div id="surgery" class="section">
+  <h2>الجراحة العامة (General Surgery)</h2>
+  <p>تختص بالعلاج الجراحي لأمراض متعددة تشمل البطن والثدي والجلد والغدد وغيرها.</p>
+  <div class="links">
+    <a href="https://www.facs.org" target="_blank">American College of Surgeons</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ طب الأعصاب -->
+<div id="neurology" class="section">
+  <h2>طب الأعصاب (Neurology)</h2>
+  <p>يدرس أمراض الجهاز العصبي المركزي والطرفي مثل السكتات الدماغية والتصلب المتعدد والصرع.</p>
+  <div class="links">
+    <a href="https://www.aan.com" target="_blank">American Academy of Neurology</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ الطب النفسي -->
+<div id="psychiatry" class="section">
+  <h2>الطب النفسي (Psychiatry)</h2>
+  <p>يعنى بتشخيص وعلاج الاضطرابات النفسية والعقلية مثل الاكتئاب والقلق والفصام.</p>
+  <div class="links">
+    <a href="https://www.psychiatry.org" target="_blank">American Psychiatric Association</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+<!-- ✅ طب العيون -->
+<div id="ophthalmology" class="section">
+  <h2>طب العيون (Ophthalmology)</h2>
+  <p>يهتم بتشخيص وعلاج أمراض العيون وجراحتها وتصحيح عيوب الإبصار.</p>
+  <div class="links">
+    <a href="https://www.aao.org" target="_blank">American Academy of Ophthalmology</a>
+  </div>
+  <div class="back"><button onclick="goBack()">العودة إلى الأقسام</button></div>
+</div>
+
+
+</body>
+<button onclick="location.href='index اسلاميات.html'">🏠 العودة إلى الصفحة الرئيسية</button>
+  </div>
+</html>

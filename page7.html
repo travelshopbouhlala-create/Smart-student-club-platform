@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>قسم الصيدلة المتكامل</title>
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background-color: #4CAF50;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #004080;
+      margin-top: 30px;
+    }
+    p {
+      margin: 20px;
+      line-height: 1.8;
+      text-align: right;
+      padding: 0 20px;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px auto;
+    }
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    .section {
+      background-color: #ffffff;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: right;
+    }
+    .section h2 {
+      color: #0066cc;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .section p {
+      line-height: 1.7;
+    }
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .section li {
+      margin: 10px 0;
+    }
+    .section a {
+      text-decoration: none;
+      color: #333333;
+      background-color: #e0f0ff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .section a:hover {
+      background-color: #c0e0ff;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .link-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin: 10px;
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.2s;
+    }
+    .link-card:hover {
+      transform: scale(1.05);
+    }
+    .faq-item {
+      margin-bottom: 10px;
+    }
+    .faq-question {
+      background-color: #e0f0ff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777777;
+      padding-bottom: 20px;
+    }
+  </style>
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      if(answer.style.display === "none") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h1>قسم الصيدلة</h1>
+
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920311.png" alt="شعار الصيدلة">
+    <h2>منصة علوم الصيدلة</h2>
+  </div>
+
+  <h2>ما هو علم الصيدلة؟</h2>
+  <p>
+    علم الصيدلة هو العلم الذي يهتم بدراسة الأدوية وتركيبها وخصائصها وتأثيراتها على جسم الإنسان. يهدف الصيدلي إلى ضمان الاستخدام الآمن والفعال للدواء وتقديم الرعاية الدوائية للمرضى.
+  </p>
+
+  <!-- الأقسام الفرعية بمحتواها -->
+  <div class="section">
+    <h2>🔬 علم الأدوية Pharmacology</h2>
+    <p>علم يختص بدراسة تأثير الأدوية على الجسم ووظائفه وكيفية استخدامها في علاج الأمراض مع التركيز على الجرعات، الامتصاص، التوزيع، الأيض، والإطراح.</p>
+  </div>
+
+  <div class="section">
+    <h2>🏥 الصيدلة السريرية Clinical Pharmacy</h2>
+    <p>فرع يهتم بتطبيق المعرفة الدوائية عمليًا في المستشفيات لتحسين الرعاية الصحية للمرضى، من خلال إدارة العلاج الدوائي وتقديم الاستشارات الدوائية.</p>
+  </div>
+
+  <div class="section">
+    <h2>⚗️ الكيمياء الصيدلية Pharmaceutical Chemistry</h2>
+    <p>يدرس تصميم وتطوير المركبات الدوائية الجديدة وتحليلها، ويشمل الكيمياء العضوية التحضيرية وتحليل جودة الدواء وتركيبه البنيوي.</p>
+  </div>
+
+  <div class="section">
+    <h2>🏭 الصيدلة الصناعية Industrial Pharmacy</h2>
+    <p>تهتم بتصنيع وتطوير الأدوية على نطاق صناعي، وضمان جودتها وثباتها وسلامتها للاستخدام البشري وفقًا للمعايير العالمية.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌿 العقاقير Pharmacognosy</h2>
+    <p>فرع يركز على دراسة العقاقير ذات المنشأ الطبيعي سواء النباتية أو الحيوانية أو المعدنية وكيفية استخلاصها واستخدامها في الطب والصيدلة.</p>
+  </div>
+
+  <div class="section">
+    <h2>💉 الصيدلة الإكلينيكية Clinical Pharmacology</h2>
+    <p>يهتم بدراسة تأثيرات الأدوية على الإنسان من منظور سريري مع البحث في التفاعلات الدوائية وآليات عملها والتطبيق العلاجي الآمن.</p>
+  </div>
+
+  <h2>أهم كليات الصيدلة والجامعات</h2>
+  <div class="links">
+    <div class="link-card">
+      <a href="https://pharmacy.umich.edu/" target="_blank">كلية الصيدلة - جامعة ميشيغان</a>
+    </div>
+    <div class="link-card">
+      <a href="https://pharmacy.unc.edu/" target="_blank">كلية الصيدلة - جامعة نورث كارولاينا</a>
+    </div>
+    <div class="link-card">
+      <a href="https://pharmacy.ucsf.edu/" target="_blank">كلية الصيدلة - جامعة كاليفورنيا سان فرانسيسكو</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.pharmacy.ox.ac.uk/" target="_blank">كلية الصيدلة - جامعة أوكسفورد</a>
+    </div>
+  </div>
+
+  <!-- بحوث ودراسات علمية -->
+  <div class="section">
+    <h2>📚 بحوث ودراسات علمية</h2>
+    <ul>
+      <li><a href="https://www.sciencedirect.com/journal/journal-of-pharmaceutical-sciences" target="_blank">Journal of Pharmaceutical Sciences</a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed: Pharmacy Research</a></li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC" target="_blank">PMC Free Full-Text Pharmacy Articles</a></li>
+      <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate: Pharmacy Papers</a></li>
+    </ul>
+  </div>
+
+  <!-- مواقع علمية ومجلات أدوية موثوقة -->
+  <h2>مواقع علمية ومجلات أدوية موثوقة</h2>
+  <div class="links">
+    <div class="link-card">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.drugs.com/" target="_blank">Drugs.com</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.pharmacytimes.com/" target="_blank">Pharmacy Times</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.nejm.org/" target="_blank">NEJM</a>
+    </div>
+  </div>
+
+  <!-- صفحة الأسئلة والأجوبة -->
+  <div class="section">
+    <h2>❓ أسئلة وأجوبة تفاعلية</h2>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer('a1')">ما الفرق بين الصيدلة السريرية والإكلينيكية؟</div>
+      <div class="faq-answer" id="a1">الصيدلة السريرية تهتم بتطبيق الصيدلة في رعاية المرضى بالمستشفيات، بينما الإكلينيكية تركز على دراسة تأثير الأدوية سريريًا من منظور أبحاث ودراسات علمية على الإنسان.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer('a2')">ما هي العقاقير الطبيعية الأكثر استخدامًا؟</div>
+      <div class="faq-answer" id="a2">مثل الزنجبيل، الكركم، القرفة، عشبة القديس جون، وإشنسا، وتستخدم لأغراض طبية متعددة وفق دراسات مثبتة.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer('a3')">هل يمكن للصيدلي العمل في الصناعة؟</div>
+      <div class="faq-answer" id="a3">نعم، الصيدلة الصناعية تعد من أكبر مجالات عمل الصيادلة في تطوير وتصنيع ومراقبة جودة الأدوية.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    تم التصميم بواسطة BOUHLALA - M
+  </footer>
+
+</body>
+     <button onclick="location.href='index اسلاميات.html'">🏠 العودة إلى الصفحة الرئيسية</button>
+  </div>
+</html>
